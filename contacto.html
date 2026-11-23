@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Aura Accesorios</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">AURA <span>ACCESORIOS</span></a>
+        <nav class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="contacto.html" class="activo">Contacto</a>
+            <a href="carrito.html" class="badge-carrito">🛒 Carrito (<span id="contador-carrito">0</span>)</a>
+        </nav>
+    </header>
+
+    <main class="contenedor" style="max-width: 700px;">
+        <h1 class="titulo-seccion">Contáctanos</h1>
+        <div class="caja-blanca">
+            <p style="margin-bottom: 1rem; color: #475569;">
+                ¿Tienes dudas sobre tallas, materiales o envíos? Escríbenos directamente o envía tus consultas aquí.
+            </p>
+            <div style="margin-bottom: 1.5rem; line-height: 1.8;">
+                <p><strong>📍 Ubicación:</strong> Tijuana, Baja California, México</p>
+                <p><strong>🕒 Horario de atención:</strong> Lunes a Sábado de 9:00 AM a 7:00 PM</p>
+                <p><strong>📦 Envíos:</strong> Entregas personales locales y envíos nacionales</p>
+            </div>
+
+            <form onsubmit="event.preventDefault(); alert('Mensaje enviado correctamente. Te responderemos pronto.'); this.reset();">
+                <div class="form-grupo">
+                    <label>Tu Nombre:</label>
+                    <input type="text" required placeholder="Escribe tu nombre">
+                </div>
+                <div class="form-grupo">
+                    <label>Correo o WhatsApp:</label>
+                    <input type="text" required placeholder="Ej. 664 123 4567">
+                </div>
+                <div class="form-grupo">
+                    <label>Mensaje:</label>
+                    <textarea rows="4" required placeholder="¿En qué podemos ayudarte?"></textarea>
+                </div>
+                <button type="submit" class="btn-primario" style="width: 100%;">Enviar Consulta</button>
+            </form>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Aura Accesorios — Todos los derechos reservados</p>
+    </footer>
+
+    <script src="js/database.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

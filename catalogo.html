@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo | Aura Accesorios</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">AURA <span>ACCESORIOS</span></a>
+        <nav class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="catalogo.html" class="activo">Catálogo</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="carrito.html" class="badge-carrito">🛒 Carrito (<span id="contador-carrito">0</span>)</a>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+        <h1 class="titulo-seccion">Catálogo de Accesorios</h1>
+        
+        <div id="contenedor-filtros" class="filtros">
+            <!-- Los botones de categoría se cargan dinámicamente desde la BD -->
+        </div>
+
+        <div id="grid-catalogo" class="grid-productos">
+            <!-- Todos los productos se cargan dinámicamente desde la BD -->
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Aura Accesorios — Todos los derechos reservados</p>
+    </footer>
+
+    <script src="js/database.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>

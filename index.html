@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Accesorios | Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index.html" class="logo">AURA <span>ACCESORIOS</span></a>
+        <nav class="nav-links">
+            <a href="index.html" class="activo">Inicio</a>
+            <a href="catalogo.html">Catálogo</a>
+            <a href="contacto.html">Contacto</a>
+            <a href="carrito.html" class="badge-carrito">🛒 Carrito (<span id="contador-carrito">0</span>)</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Detalles que transforman tu estilo</h1>
+        <p>Explora nuestra colección de joyería minimalista, relojes y accesorios diseñados para destacar todos los días.</p>
+        <a href="catalogo.html" class="btn-primario">Explorar Catálogo Completo</a>
+    </section>
+
+    <main class="contenedor">
+        <h2 class="titulo-seccion">Accesorios Destacados</h2>
+        <div id="grid-destacados" class="grid-productos">
+            <!-- Se llena automáticamente desde js/database.js -->
+        </div>
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="catalogo.html" class="btn-primario">Ver todos los productos</a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Aura Accesorios — Todos los derechos reservados</p>
+    </footer>
+
+    <script src="js/database.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
