@@ -1,4 +1,4 @@
-const NUMERO_WHATSAPP = "526641234567";
+const NUMERO_WHATSAPP = "526863620432";
 
 const BD_CATEGORIAS = [
     { id: 1, nombre: "Collares" },
